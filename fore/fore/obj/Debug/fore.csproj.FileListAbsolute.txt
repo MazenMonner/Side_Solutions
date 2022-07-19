@@ -1,0 +1,6 @@
+C:\Users\pc\source\repos\fore\fore\bin\Debug\fore.exe.config
+C:\Users\pc\source\repos\fore\fore\bin\Debug\fore.exe
+C:\Users\pc\source\repos\fore\fore\bin\Debug\fore.pdb
+C:\Users\pc\source\repos\fore\fore\obj\Debug\fore.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\fore\fore\obj\Debug\fore.exe
+C:\Users\pc\source\repos\fore\fore\obj\Debug\fore.pdb
