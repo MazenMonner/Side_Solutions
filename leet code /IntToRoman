@@ -1,0 +1,51 @@
+public class Solution {
+    public string IntToRoman(int num) {
+       
+            string s = "";
+        // thousands
+        int m = num/1000 ;
+        for (int i=0 ; i < m ; i++)
+        s=s+"M";
+
+        // hundreds
+        num = num - (m*1000) ; 
+         m = num/100;
+            int M = m ; 
+
+            if(m == 9)   {s = s + "CM";  m =0;}
+            else if(m == 4)   {s = s + "CD"; m =0;}
+        else if (m >= 5 ) 
+        { s = s + "D" ; m = m - 5; }
+                   
+        for (int i=0 ; i < m ; i++)
+        s=s+"C";
+            
+       // tens 
+                  num = num - (M*100) ; 
+   
+         m = num/10;
+             M = m;
+            if(m == 9)   {s = s + "XC"; m =0;}
+            else if(m == 4)   {s = s + "XL"; m =0;}
+        else if (m >= 5 ) 
+        { s = s + "L" ; m = m - 5; }
+                   
+        for (int i=0 ; i < m ; i++)
+        s=s+"X";
+            
+             // ones 
+                  num = num - (M*10) ; 
+   
+         m = num;
+             M = m;
+            if(m == 9)   {s = s + "IX"; m =0;}
+            else if(m == 4)   {s = s + "IV"; m =0;}
+        else if (m >= 5 ) 
+        { s = s + "V" ; m = m - 5; }
+                   
+        for (int i=0 ; i < m ; i++)
+        s=s+"I";
+        return s;
+        
+    }
+}
